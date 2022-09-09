@@ -2,3 +2,13 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/makePayment
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://ORDER-SERVICE/order/bookOrder
