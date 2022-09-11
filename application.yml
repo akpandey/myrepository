@@ -29,9 +29,9 @@ microservice:
     console:
       enabled: true
       
-  logging:
+logging:
   level:
     root: ERROR
     org.springframework.web: ERROR
-    com.ddm: DEBUG
+    com.ddm: TRACE
     org.hibernate: ERROR
